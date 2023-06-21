@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+   
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+   
+   
+  /*
+    AppBar
+  */
+   
+  .app-bar {
+    padding: 8px 16px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  }
+   
+  .app-bar .app-bar__menu {
+    display: flex;
+    align-items: center;
+  }
+   
+  .app-bar .app-bar__menu button {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    padding: 8px;
+    cursor: pointer;
+  }
+   
+  .app-bar .app-bar__brand {
+    display: flex;
+    align-items: center;
+  }
+   
+  .app-bar .app-bar__brand h1 {
+    color: #db0000;
+    text-transform: uppercase;
+    font-size: 22px;
+    user-select: none;
+  }
+   
+  .app-bar .app-bar__navigation {
+    position: absolute;
+    top: 50px;
+    left: -180px;
+    width: 150px;
+    transition: all 0.3s;
+    padding: 8px;
+    background-color: white;
+    overflow: hidden;
+  }
+   
+  .app-bar .app-bar__navigation.open {
+    left: 0;
+  }
+   
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+   
+  /*
+    Main Content
+  */
+   
+  main {
+    padding: 32px;
+    flex: 1;
+  }
+   
+  .content {
+    margin: 0 auto;
+    min-height: 100%;
+  }
+   
+  .content .content__heading {
+    font-weight: normal;
+  }
+   
+
+  /* Global Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Detail Restaurant Styles */
+.detail-restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.card-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.list-content {
+  padding: 20px;
+}
+
+.list-cityrate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-cityrate {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.card-cityrate i {
+  margin-right: 5px;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.menus-title {
+  margin-bottom: 10px;
+}
+
+.menu {
+  margin-bottom: 20px;
+}
+
+.menu h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.menu ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.menu li {
+  margin-bottom: 5px;
+}
+
+.menu li i {
+  margin-right: 5px;
+  color: #0095ff;
+}
+
+.reviews {
+  margin-top: 20px;
+}
+
+.review-heading {
+  margin-bottom: 10px;
+}
+
+.container-card-review {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.review-card {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.review-card-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.name-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-date strong {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.name-date span {
+  font-size: 12px;
+  color: #888;
+}
+
+.review-card-bottom {
+  font-size: 14px;
+}
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .list-card .card-img,
+  .list-card .list-content {
+    width: 100%;
+  }
+  
+  .card-img img {
+    height: 200px;
+  }
+}
+
+   
+  /*
+    Movies
+  */
+   
+  .movies {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 32px 0;
+  }
+   
+   
+  /*
+    Movie Item
+  */
+   
+  .movie-item {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+   
+  .movie-item__header {
+    position: relative;
+  }
+   
+  .movie-item .movie-item__header .movie-item__header__poster {
+    width: 100%;
+  }
+   
+  .movie-item .movie-item__header .movie-item__header__rating {
+    position: absolute;
+    padding: 8px;
+    bottom: 20px;
+    left: 0;
+    display: inline-block;
+    background-color: black;
+    color: white;
+  }
+   
+  .movie-item .movie-item__header .movie-item__header__rating .movie-item__header__rating__score {
+    margin-left: 10px;
+  }
+   
+  .movie-item .movie-item__content {
+    padding: 16px;
+  }
+   
+  .movie-item .movie-item__content h3 {
+    margin: 0 0 10px 0;
+  }
+   
+  .movie-item .movie-item__content h3 a {
+    color: #db0000;
+    text-decoration: none;
+  }
+   
+  .movie-item .movie-item__content p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
+  }
+  .like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db0000;
+  
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+  
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+  .res-name {
+    text-decoration: none;
+    color: black;
+  }
+  .res-name:hover{
+    background-color: red;
+    color: white;
+  }
+   
+   
+  /*
+    Movie
+  */
+   
+  .movie {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px 16px;
+  }
+   
+  .movie .movie__poster {
+    width: 100%;
+    max-width: 400px;
+  }
+   
+  .movie .movie__info h4 {
+    margin: 8px 0;
+  }
+  .content__heading {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+  }
+   
+   
+  /*
+    Footer
+  */
+   
+  footer {
+    padding: 16px;
+  }
+   
+  footer p {
+    text-align: center;
+    color: #aaaaaa;
+  }
+   
+  footer p a {
+    color: #db0000;
+    text-decoration: none;
+  }
